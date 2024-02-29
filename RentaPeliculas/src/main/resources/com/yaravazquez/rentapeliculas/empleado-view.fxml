@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="387.0" prefWidth="482.0" style="-fx-background-color: #a5c3a7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yaravazquez.rentapeliculas.controllers.Empleadocontroller">
+   <children>
+      <Label layoutX="134.0" layoutY="32.0" text="Empleado" textFill="#47667b" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="46.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="empleadoText" disable="true" layoutX="35.0" layoutY="136.0" opacity="0.74" prefHeight="132.0" prefWidth="422.0" wrapText="true" />
+      <Label layoutX="191.0" layoutY="118.0" text="Lista de empleados:" textFill="#47667b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button layoutX="84.0" layoutY="301.0" mnemonicParsing="false" onMouseClicked="#registrarEmpleado" style="-fx-background-color: #47667b;" text="Agregar empleado" textFill="#f8f4c4" />
+      <Button layoutX="409.0" layoutY="336.0" mnemonicParsing="false" onMouseClicked="#salir2" style="-fx-background-color: #6d8b89;" text="salir" textFill="#f8f4c4" />
+      <Button layoutX="276.0" layoutY="301.0" mnemonicParsing="false" onMouseClicked="#eliminar" style="-fx-background-color: #47667b;" text="Eliminar empleado" textFill="#f8f4c4" />
+      <ImageView fitHeight="51.0" fitWidth="68.0" layoutX="366.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/pixel-art-illustration-cd-disk-pixelated-disk-cd-dvd-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

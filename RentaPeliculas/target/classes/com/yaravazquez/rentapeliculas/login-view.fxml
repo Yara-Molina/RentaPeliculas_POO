@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.BottomNavigationButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane depthTest="ENABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="317.0" style="-fx-background-color: #a5c3a7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yaravazquez.rentapeliculas.controllers.LoginController">
+   <children>
+      <BottomNavigationButton layoutX="125.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#onClickAdmin1Button" style="-fx-background-color: #47667b;" text="Peliculas" textFill="#efefcd" />
+      <BottomNavigationButton layoutX="118.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#onClickEmpleadoButton" style="-fx-background-color: #47667b;" text="Empleados" textFill="#f2d798" />
+      <ImageView accessibleText="Movies" fitHeight="89.0" fitWidth="278.0" layoutX="34.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/movies1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="58.0" layoutY="39.0" text="Rent Movies" textAlignment="CENTER" textFill="#145dd4">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="42.0" layoutX="256.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/pixel-art-illustration-cd-disk-pixelated-disk-cd-dvd-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="exitButton" layoutX="256.0" layoutY="321.0" mnemonicParsing="false" onMouseClicked="#salir0" style="-fx-background-color: #242759;" text="cerrar" textFill="WHITE" underline="true" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <effect>
+      <ColorAdjust brightness="0.03" contrast="0.04" saturation="-0.12" />
+   </effect>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
